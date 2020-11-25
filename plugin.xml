@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>org.example.CodeExamplesAction</id>
+    <name>Code Examples</name>
+    <vendor email="ikar108@yandex.ru" url="ikar108@yandex.ru">MyCompany</vendor>
+
+    <description><![CDATA[
+    Open examples of using selected class (use full class name) from open source Java project.<br>
+    <em></em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="CodeExamplesAction" class="CodeExamplesAction" text="Code Examples Action">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl BACK_SLASH"/>
+            description="Open examples of using selected class (use full class name) from open source Java project. (by www.programcreek.com)">
+        </action>
+    </actions>
+</idea-plugin>
